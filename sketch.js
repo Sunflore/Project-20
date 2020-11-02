@@ -24,8 +24,8 @@ function draw() {
     && car.y - wall.y < car.height/2 + wall.height/2 
     && wall.y - car.y < car.height/2 + wall.height/2)
     {
-      if(car.x - wall.x < car.width/2 + wall.width/2)
-      {
+      /*if(car.x - wall.x < car.width/2 + wall.width/2)
+      {*/
         car.velocityX=0;
         var deformation=0.5 * weight * speed* speed/22509;
         if(deformation > 180)
@@ -42,7 +42,7 @@ function draw() {
         {
           car.shapeColor=color(0,255,0);
         }
-      }
+      //}
     }
 
   drawSprites();
